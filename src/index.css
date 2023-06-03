@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: linear-gradient(
+    to right bottom,
+    rgb(15, 23, 42),
+    rgb(30, 41, 59),
+    rgb(15, 23, 42)
+  );
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  min-height: 100vh;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.24);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #e62725;
+  outline: 1px solid #e62725;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
